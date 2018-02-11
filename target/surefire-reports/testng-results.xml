@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-02-11T12:47:05Z" name="restassured.tests.PierwszyTest" finished-at="2018-02-11T12:47:05Z" duration-ms="25">
+  <suite started-at="2018-02-11T20:43:12Z" name="TestAll" finished-at="2018-02-11T20:43:37Z" duration-ms="25556">
     <groups>
     </groups>
-    <test started-at="2018-02-11T12:47:05Z" name="Command line test" finished-at="2018-02-11T12:47:05Z" duration-ms="25">
+    <test started-at="2018-02-11T20:43:12Z" name="order" finished-at="2018-02-11T20:43:37Z" duration-ms="25556">
       <class name="restassured.tests.PierwszyTest">
-        <test-method signature="cos()[pri:0, instance:restassured.tests.PierwszyTest@31368b99]" started-at="2018-02-11T12:47:05Z" name="cos" finished-at="2018-02-11T12:47:05Z" duration-ms="4" status="PASS">
+        <test-method signature="createTable()[pri:1, instance:restassured.tests.PierwszyTest@20a14b55]" started-at="2018-02-11T20:43:12Z" name="createTable" finished-at="2018-02-11T20:43:27Z" duration-ms="15259" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cos -->
-        <test-method signature="cos1()[pri:0, instance:restassured.tests.PierwszyTest@31368b99]" started-at="2018-02-11T12:47:05Z" name="cos1" finished-at="2018-02-11T12:47:05Z" duration-ms="0" status="PASS">
+        </test-method> <!-- createTable -->
+        <test-method signature="cos1()[pri:2, instance:restassured.tests.PierwszyTest@20a14b55]" started-at="2018-02-11T20:43:27Z" name="cos1" finished-at="2018-02-11T20:43:37Z" duration-ms="10272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cos1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:restassured.tests.PierwszyTest@20a14b55]" started-at="2018-02-11T20:43:37Z" name="tearDown" finished-at="2018-02-11T20:43:38Z" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- restassured.tests.PierwszyTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- restassured.tests.PierwszyTest -->
+    </test> <!-- order -->
+  </suite> <!-- TestAll -->
 </testng-results>
