@@ -9,6 +9,7 @@ public class PierwszyTest {
     public void cos(){
 //        WebDriver driver = new ChromeDriver();
         System.out.println("hello fuckers");
+        System.out.println("hello fuckers");
     }
 
     @Test
