@@ -41,7 +41,7 @@ public class PierwszyTest {
     }
 
     @Test(priority = 2)
-    public void cos1() {
+    public void testDwa() {
         String boardName = "Nazwa tablicy";
         //mniej aktywne tablice
         List<WebElement> button = driver.findElements(By.cssSelector("#content > div > div.js-boards-page > div > div > div.boards-page-board-section.mod-no-sidebar > a > span"));
