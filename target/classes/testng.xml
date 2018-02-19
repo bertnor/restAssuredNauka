@@ -4,7 +4,8 @@
 
     <test name="order">
         <classes>
-            <class name="restassured.tests.PierwszyTest" />
+            <!--<class name="restassured.tests.FirstRestAssuredTest" />-->
+            <class name="restassured.tests.OauthTest" />
         </classes>
     </test>
 

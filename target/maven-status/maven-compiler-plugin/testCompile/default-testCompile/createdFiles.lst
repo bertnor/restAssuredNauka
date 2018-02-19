@@ -1,4 +1,5 @@
 restassured\tests\Helper.class
+restassured\tests\FirstRestAssuredTest.class
 restassured\tests\PierwszyTest.class
 restassured\tests\Helper$1.class
-restassured\tests\Serwer.class
+restassured\tests\OauthTest.class

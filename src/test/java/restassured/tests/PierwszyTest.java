@@ -1,17 +1,15 @@
 package restassured.tests;
 
-import com.jayway.restassured.RestAssured;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class PierwszyTest extends Serwer {
+public class PierwszyTest {
     private Helper helper = new Helper();
 //    private WebDriver driver = helper.initializeWebDriver();
     private WebDriver driver;
@@ -66,16 +64,16 @@ public class PierwszyTest extends Serwer {
         driver.quit();
     }
 
-    @Test(priority = 3)
-    public void makeSureThatGoogleIsUp() {
-        System.out.println("witam");
-        RestAssured.given().when().get("http://www.google.com").then().statusCode(200);
-    }
-
-    @Test(priority = 3)
-    public void basicPingTest() {
-        System.out.println("no czesc");
-        RestAssured.given().when().get("/garage").then().statusCode(200);
-    }
+////    @Test(priority = 3)
+//    public void makeSureThatGoogleIsUp() {
+//        System.out.println("witam");
+//        RestAssured.given().when().get("http://www.google.com").then().statusCode(200);
+//    }
+//
+////    @Test(priority = 3)
+//    public void basicPingTest() {
+//        System.out.println("no czesc");
+//        RestAssured.given().when().get("/garage").then().statusCode(200);
+//    }
 }
 
