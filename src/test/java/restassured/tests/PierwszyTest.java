@@ -1,21 +1,22 @@
 package restassured.tests;
 
+import com.jayway.restassured.RestAssured;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class PierwszyTest {
+public class PierwszyTest extends Serwer {
     private Helper helper = new Helper();
-    private WebDriver driver = helper.initializeWebDriver();
+//    private WebDriver driver = helper.initializeWebDriver();
+    private WebDriver driver;
 
-    @Test(priority = 1)
+//    @Test(priority = 1)
     public void createTable() {
         String boardName = "Nazwa tablicy";
         helper.logIn("norbert.bokwa@gmail.com", "Kiep1234");
@@ -40,7 +41,7 @@ public class PierwszyTest {
         helper.deleteBoards("Nowa tablica1");
     }
 
-    @Test(priority = 2)
+//    @Test(priority = 2)
     public void testDwa() {
         String boardName = "Nazwa tablicy";
         //mniej aktywne tablice
@@ -60,14 +61,21 @@ public class PierwszyTest {
         helper.deleteBoards(boardName);
     }
 
-    @AfterSuite
+//    @AfterSuite
     public void tearDown() {
         driver.quit();
     }
 
-//    @Test
-//    public void makeSureThatGoogleIsUp() {
-//        given().when().get("http://www.google.com").then().statusCode(200);
-//    }
+    @Test(priority = 3)
+    public void makeSureThatGoogleIsUp() {
+        System.out.println("witam");
+        RestAssured.given().when().get("http://www.google.com").then().statusCode(200);
+    }
+
+    @Test(priority = 3)
+    public void basicPingTest() {
+        System.out.println("no czesc");
+        RestAssured.given().when().get("/garage").then().statusCode(200);
+    }
 }
 
